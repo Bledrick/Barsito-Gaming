@@ -1,0 +1,659 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*NAVBAR--INICIO*/
+
+nav {
+    background: rgba(3, 3, 3, 0.945);
+    width: 100%;
+    height: 100px;
+    display: flex;   
+}
+
+ul{
+    list-style-type: none;
+    margin: 20px 10px 10px 50px;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+.navbar-brand{
+   padding: 10px 0px 10px 50px;
+}
+
+.navbar-text{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.navbar-text li{
+    color: white;
+    font-size: 22px;
+}
+
+.navbar-text li:hover{
+    color: rgba(221, 221, 221, 0.877);  
+}
+
+/*NAVBAR--FIN*/
+
+/*SLIDER*--INICIO*/
+
+.slider-section{
+    width: 100%;
+       
+}
+
+.slide-logo{
+    position: absolute;
+    width: 20%;
+    top: 0;
+    left: 0;
+    margin-left: 40%;
+    margin-top: 20%;
+    z-index: 1;     
+}
+
+/*SLIDER--FIN*/
+
+/*TEAM--INICIO*/
+.team-section{
+    width: 100%;
+}
+.team-container{
+    width: 100%;
+    padding-bottom: 250px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url(../img/team_bg_desktop.jpg);
+}
+
+.team-title {
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 120px 0 150px;
+}
+
+.team-title h2{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: auto;
+    color: white;
+}
+
+.team-title h3{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 5px;    
+    width: 100%;
+    padding-bottom: 20px;
+    margin: auto;
+    color: white;
+}
+
+.team-title p{
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;    
+}
+
+.team-cards{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    max-width: 1700px;
+    margin: 0 auto;
+
+}
+
+.team-card{
+    width: 33%;
+    margin-right: 60px;    
+}
+
+.team-card-title{
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+    border-bottom: 1px solid white;
+    background: rgba(22, 21, 21, 0.822);
+}
+
+.team-shield{
+    width: 100%;
+    max-width: 140px !important;
+    margin-top: -40px;
+    margin-bottom: 45px;
+}
+
+.team-card-title h4{
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.team-card-title p{
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+}
+.team-img{
+    width: 100%;  
+}
+
+/*SLIDER FIN*/
+
+/*LOGROS*/
+
+.logros-container{
+    width: 100%;
+    padding: 0 0 40px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url(../img/overview_bg_desktop.jpg);
+}
+
+.logros-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 650px 0 8rem;
+}
+
+.logros-title h2{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.logros-title h3{
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 5px;    
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0;
+    color: white;
+}
+
+.logros-title p{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;   
+}
+
+.logros-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.logros-card{
+    width: 24%;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(3, 3, 3, 0.5);
+}
+
+.logros-card >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+  
+.logros-cards:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+  
+  /* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+  
+  /* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.mySlides {
+    display: none;
+}
+  
+.cursor {
+    cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+img {
+    margin-bottom: -4px;
+}
+  
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+  
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logros-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transform: scale(1);
+    background: hsla(0, 0%, 7%, 0.685);
+    transition: transform .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logros-hover img{
+    width: 80px;
+}
+.logros-hover p{
+    color: white;    
+}
+.logros-card:hover .logros-hover{
+    transform: scale(0);
+}
+
+/*LOGROS FIN*/
+
+/*CONTACTO*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.contact-section{
+    background-color: black;
+}
+
+.contact-container {
+    width: 100%;
+    padding: 0 0 175px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+.contact-title {
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 120px 0 80px;
+}
+
+.contact-title h2{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.contact-title h3{
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 5px;    
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 0;
+    color: white;
+}
+
+.contact-info {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;   
+}
+
+.contact-cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.contact-card {
+    width: 100%;    
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 246, 246, 0.486);
+}
+
+.contact-card img{
+    width: 100%;
+    max-width: 600px;
+}
+  
+.contact-text {
+    padding: 40px 20px;    
+}
+
+.contact-text h4{
+    font-size: 35px;
+}
+.contact-text p {
+    font-size: 20px;
+    line-height: 20px;    
+}
+  
+.contact-text::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.contact-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    letter-spacing: 5px;    
+}
+
+.contact-button:hover {
+    background-color: #555;
+}
+
+/*CONTACTO FIN*/
+
+/*FOOTER*/
+.footer-container{
+    background: rgba(3, 3, 3, 0.945);
+    width: 100%;
+    height: 550px;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+    padding: 70px 0 70px;
+    box-sizing: border-box;
+}
+
+.footer-ghost{
+    width: 360px;
+}
+
+.footer-ghost img{
+    width: 100%;
+}
+
+.footer-contact{
+    width: 560px;
+}
+
+.footer-contact img{
+    width: 70%;
+}
+
+.footer-phone{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.phone{
+    padding-right: 20px;
+}
+
+.footer-mail{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.mail{
+    padding-right: 20px;
+}
+
+.footer-contact p{
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 30px;
+    line-height: 60px;
+    display: inline-flex;
+}
+
+.footer-rrss{
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 55px;
+    padding-top: 20px;
+    
+}
+.footer-contact ion-icon{
+    padding-right: 20px;
+    justify-content: space-evenly;
+}
+
+.footer-newsletter{
+    background: silver;
+    width: 560px;
+
+}
+
+/*FOOTER FIN*/
+
+
+@media only screen and (max-width: 650px) {
+
+/*NAVBAR*/
+
+/*SLIDER*/
+
+/*TEAM*/
+
+.team-title{
+    width: 70%;
+}
+
+.team-cards{
+    display: block;
+    width: 100%;
+}
+
+.team-card{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 70px;    
+}
+
+/*LOGROS*/
+
+/*CONTACTO*/
+
+/*FOOTER*/
+
+
+}

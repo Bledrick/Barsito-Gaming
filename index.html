@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barsito Gaming Es</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar-section">
+      <nav class="navbar">
+        <img class="navbar-brand" src="img/logo-02.png" alt="">
+        <ul class="navbar-text">
+          <li><a>INICIO</a></li>
+          <li><a>TEAM</a></li>
+          <li><a>LOGROS</a></li>
+          <li><a>CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-space"></div>
+    </header>
+    <!--Slider-->
+    <section class="slider-section">
+      <img name="slide" width="100%">
+      <img class="slide-logo" src="img/logo-03.png" alt="">     
+    </section>
+    <!--Team-->
+    <section class="team-section">
+      <div class="team-container">
+        <div class="team-title">
+          <h2>TEAM</h2>
+          <h3>NUESTRA ESCUADRA</h3>
+          <p>Ya sea desafiando oleadas de enemigos en mazmorras oscuras 
+            y llenas de trampas o desafiando a otros guardianes, siempre 
+            estaremos levantando la bandera de victoria del clan.</p>
+        </div>
+        <div class="team-cards">
+          <div class="team-card">
+            <div class="team-card-title">
+              <img class="team-shield" src="img/team_warlock_shield.png" alt="">
+              <h4>Bledrick</h4>
+              <p>El que no muere.</p>
+            </div>
+            <div class="team-img">
+              <img src="img/card01.jpg" alt="">
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-title">
+              <img class="team-shield" src="img/team_hunter_shield.png" alt="">
+              <h4>Lav</h4>
+              <p>El positivo.</p>
+            </div>
+            <div class="team-img">
+              <img src="img/card02.jpg" alt="">
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-title">
+              <img class="team-shield" src="img/team_hunter_shield.png" alt="">
+              <h4>Monto007</h4>
+              <p>El que usa Jostin.</p>
+            </div>
+            <div class="team-img">
+              <img src="img/card03.jpg" alt="">
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+    <!--Logros-->
+    <section class="logros-section">
+        <div class="logros-container">
+          <div class="logros-title">
+            <h2>LOGROS</h2>
+          <h3>CONQUISTAS DEL CLAN</h3>
+          <p>Ya sea desafiando oleadas de enemigos en mazmorras oscuras 
+            y llenas de trampas o desafiando a otros guardianes, siempre 
+            estaremos levantando la bandera de victoria del clan.</p>
+          </div>
+          <div class="logros-cards">
+            <div class="logros-card">
+              <img src="img/gal01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="">              
+              <div class="logros-hover">
+                <img src="img/icon-escuadra.png" alt="">
+              </div>
+            </div>
+            <div class="logros-card">
+              <img src="img/gal02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="">              
+              <div class="logros-hover">
+                <img src="img/icon-escuadra.png" alt="">
+              </div>
+            </div>
+            <div class="logros-card">
+              <img src="img/gal03.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="">              
+              <div class="logros-hover">
+                <img src="img/icon-escuadra.png" alt="">
+              </div>
+            </div>
+            <div class="logros-card">
+              <img src="img/gal04.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="">              
+              <div class="logros-hover">
+                <img src="img/icon-escuadra.png" alt="">
+              </div>
+            </div>
+            <div class="logros-card">
+              <img src="img/gal05.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="">              
+              <div class="logros-hover">
+                <img src="img/icon-escuadra.png" alt="">
+              </div>
+            </div>
+            <div class="logros-card">
+              <img src="img/gal06.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="">              
+              <div class="logros-hover">
+                <img src="img/icon-escuadra.png" alt="">
+              </div>
+            </div>
+            <div class="logros-card">
+              <img src="img/gal07.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="">              
+              <div class="logros-hover">
+                <img src="img/icon-escuadra.png" alt="">
+              </div>
+            </div>
+            <div class="logros-card">
+              <img src="img/gal08.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="">              
+              <div class="logros-hover">
+                <img src="img/icon-escuadra.png" alt="">
+              </div>
+            </div>             
+          </div>
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <div class="mySlides">
+                <div class="numbertext"> 1 / 8</div>
+                <img src="img/gal01.jpg" style="width:100%">
+              </div>          
+              <div class="mySlides">
+                <div class="numbertext"> 2 / 8</div>
+                <img src="img/gal02.jpg" style="width:100%">
+              </div>          
+              <div class="mySlides">
+                <div class="numbertext"> 3 / 8</div>
+                <img src="img/gal03.jpg" style="width:100%">
+              </div>              
+              <div class="mySlides">
+                <div class="numbertext"> 4 / 8</div>
+                <img src="img/gal04.jpg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext"> 5 / 8</div>
+                <img src="img/gal05.jpg" style="width:100%">
+              </div>          
+              <div class="mySlides">
+                <div class="numbertext"> 6 / 8</div>
+                <img src="img/gal06.jpg" style="width:100%">
+              </div>          
+              <div class="mySlides">
+                <div class="numbertext"> 7 / 8</div>
+                <img src="img/gal07.jpg" style="width:100%">
+              </div>              
+              <div class="mySlides">
+                <div class="numbertext"> 8 / 8</div>
+                <img src="img/gal08.jpg" style="width:100%">
+              </div>              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>          
+                         
+            </div>
+          </div>
+          </div>
+        </div>
+    </section>
+    <!--Contacto-->
+    <section class="contact-section">
+      <div class="contact-container">
+          <div class="contact-title">
+            <h2>CONTACTO</h2>
+            <h3>SOMOS PROFESIONALES</h3>
+            <p class="contact-info">Comunicanos tus dudas o sugerencias a nuestras redes.</p>
+          </div>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <img src="img/ph01.png" alt="">
+              <div class="contact-text">
+                <h4>DIEGO RUIZ</h4>
+                <p><b>Designer & Founder</b></p><br>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p><i>example@example.com</i></p><br>
+                <button class="contact-button">PORTFOLIO</button>
+              </div>
+            </div>
+            <div class="contact-card">
+              <img src="img/ph01.png" alt="">
+              <div class="contact-text">
+                <h4>ESTANISLAO TAMIOZZO</h4>
+                <p><b>Designer & Founder</b></p><br>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p><i>example@example.com</i></p><br>
+                <button class="contact-button">PORTFOLIO</button>
+              </div>
+            </div>
+            <div class="contact-card">
+              <img src="img/ph01.png" alt="">
+              <div class="contact-text">
+                <h4>NICOLAS MONTOYA</h4>
+                <p><b>Designer & Founder</b></p><br>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p><i>example@example.com</i></p><br>
+                <button class="contact-button">PORTFOLIO</button>
+              </div>
+            </div> 
+          </div>          
+      </div>
+    </section>
+    <!--Footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <div class="footer-ghost">
+            <img src="img/ghost.gif" alt="">
+          </div>
+          <div class="footer-contact">
+            <img src="img/dialogo.png" alt="">
+            <div class="footer-phone">
+              <ion-icon class="phone" name="call-outline"></ion-icon></ion-icon>
+              <p><b>+54 011-0000-0000</b></p>
+            </div>
+            <div class="footer-mail">
+              <ion-icon class="mail" name="at-outline"><ion-icon name="at-outline"></ion-icon></ion-icon>
+              <p><b>info@teambarsito.com</b></p>
+            </div>  
+            <div class="footer-rrss">
+              <ion-icon class="face" name="logo-facebook"></ion-icon>
+              <ion-icon class="insta" name="logo-instagram"></ion-icon>
+              <ion-icon class="beha" name="logo-behance"></ion-icon>
+              <ion-icon class="youtube" name="logo-youtube"></ion-icon>
+            </div>
+          </div>
+          <div class="footer-newsletter">
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      //Slider
+      var i = 0;
+      var images = [];
+      var time = 5000;
+
+      images[0] = "img/slide01.jpg";
+      images[1] = "img/slide02.jpg";
+      images[2] = "img/slide03.jpg";
+
+      function changeImg(){
+        document.slide.src = images[i];
+
+        if(i < images.length - 1){
+          i++;
+          } else {
+            i = 0;
+        }
+        setTimeout("changeImg()", time);
+      }
+      window.onload=changeImg;
+      
+      
+     // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+        //TEAM
+        
+
+    </script>   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
